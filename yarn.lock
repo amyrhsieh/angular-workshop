@@ -207,9 +207,13 @@
   version "2.5.36"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.36.tgz#6d804b79a57e9380d766a2680e9362c17d9556d2"
 
-"@types/node@^6.0.45", "@types/node@^6.0.46":
+"@types/node@^6.0.46":
   version "6.0.79"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.79.tgz#5efe7d4a6d8c453c7e9eaf55d931f4a22fac5169"
+
+"@types/node@^8.0.9":
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.9.tgz#19f44c3b6cb8a70d261d366f73650e3e3891ab2d"
 
 "@types/q@^0.0.32":
   version "0.0.32"

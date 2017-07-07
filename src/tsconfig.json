@@ -8,9 +8,13 @@
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
+    "outDir": "../dist",
     "suppressImplicitAnyIndexErrors": true,
     "typeRoots": [
       "../node_modules/@types/"
+    ],
+    "types": [
+      "node"
     ]
   },
   "compileOnSave": true,
