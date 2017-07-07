@@ -1,7 +1,24 @@
+@import './styles/_colors.global';
+
 main {
   padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  margin-top: 50px;
-  display: block;
+  color: $headline-text;
+}
+
+button {
+  background-color: #caebf2;
+  /*color: #E7DFDD;*/
+  border-radius: 5px;
+  padding: 0.5em;
+  border: 0;
+  font-size: 1em;
+}
+
+div.menu {
+  text-align: center;
 }
