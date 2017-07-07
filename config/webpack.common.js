@@ -42,7 +42,23 @@ module.exports = {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
         loader: 'raw-loader'
-      }
+      },
+      {// Sass loader for global styles
+        test: /\.global\.scss$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader"
+        ]
+      },
+      {//Sass loader for component styles
+        test: /\.scss$/,
+        exclude: [ /node_modules/, /\.global\.scss$/ ],
+        use: [
+          "raw-loader",
+          "sass-loader"
+        ]
+      },
     ]
   },
 
@@ -64,4 +80,3 @@ module.exports = {
     })
   ]
 };
-
