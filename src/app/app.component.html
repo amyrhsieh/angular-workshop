@@ -1,11 +1,16 @@
-<div class="menu">
-  <button>home</button>
-  <button>link 2</button>
-</div>
-
-<main>
+<div class="header">
   <h1>Angular Workshop</h1>
   <h2>for Developer Day 2017!</h2>
-</main>
+  <p>YAY!</p>
+</div>
+
+<div class="navbar">
+  <ul>
+    <li><a routerLink="/" [routerLinkActive]="['active']">Concepts</a></li>
+    <li><a routerLink="/" [routerLinkActive]="['active']">Robots</a></li>
+  </ul>
+</div>
 
 <p>Hello friends welcome to my presentation about Angular.</p>
+
+<router-outlet></router-outlet>
