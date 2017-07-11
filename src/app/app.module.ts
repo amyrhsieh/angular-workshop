@@ -2,8 +2,10 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { RouterModule }   from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent }   from './app.component';
+import { AppRoutingModule }   from './app-routing.module';
+import { AppComponent }       from './app.component';
+import { ConceptsComponent }  from './concepts/concepts.component';
+import { RobotsComponent }    from './robots/robots.component';
 
 @NgModule({
   imports: [
@@ -12,7 +14,9 @@ import { AppComponent }   from './app.component';
     AppRoutingModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    ConceptsComponent,
+    RobotsComponent
   ],
   bootstrap: [ AppComponent ]
 })
