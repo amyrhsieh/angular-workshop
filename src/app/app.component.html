@@ -1,16 +1,13 @@
 <div class="header">
-  <h1>Angular Workshop</h1>
-  <h2>for Developer Day 2017!</h2>
-  <p>YAY!</p>
+  <p class="title">Angular Workshop</p>
+  <p class="subtitle">for Developer Day 2017</p>
 </div>
 
 <div class="navbar">
-  <ul>
-    <li><a routerLink="/concepts" [routerLinkActive]="['active']">Concepts</a></li>
-    <li><a routerLink="/robots" [routerLinkActive]="['active']">Robots</a></li>
-  </ul>
+  <a class="navitem" routerLink="/concepts" [routerLinkActive]="['active']">Concepts</a>
+  <a class="navitem" routerLink="/robots" [routerLinkActive]="['active']">Robots</a>
 </div>
 
-<!--p>Hello friends welcome to my presentation about Angular.</p-->
-
-<router-outlet></router-outlet>
+<main>
+  <router-outlet></router-outlet>
+</main>

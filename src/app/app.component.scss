@@ -3,27 +3,47 @@
 .header {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: $headline-text;
-}
-
-button {
-  background-color: #caebf2;
-  /*color: #E7DFDD;*/
-  border-radius: 5px;
-  padding: 0.5em;
-  border: 0;
-  font-size: 1em;
+  color: $magenta;
+  .title {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
 }
 
 div.navbar {
-  padding: 10px;
+  padding: 15px 0;
   text-align: center;
-  background-color: black;
+  background-color: $black;
   color: white;
-  li {
-    display: inline-block;
-  }
-  li + li {
+  .navitem + .navitem {
     margin-left: 15px;
   }
+  .navitem {
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: $blue;
+    border: 1px solid $blue;
+  }
+  .navitem.active {
+    background-color: $blue;
+    color: $black;
+  }
+  .navitem:hover {
+    @extend .navitem.active;
+    opacity: 0.6;
+  }
+  .navitem:active {
+    @extend .navitem.active;
+    opacity: 0.8;
+  }
+}
+
+main {
+  padding: 20px;
 }
