@@ -27,11 +27,11 @@ div.navbar {
     border-radius: 5px;
     text-decoration: none;
     padding: 5px;
-    color: $blue;
-    border: 1px solid $blue;
+    color: $green;
+    border: 1px solid $green;
   }
   .navitem.active {
-    background-color: $blue;
+    background-color: $green;
     color: $black;
   }
   .navitem:hover {
@@ -45,5 +45,9 @@ div.navbar {
 }
 
 main {
-  padding: 20px;
+  // padding: 20px;
+  display: block;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }

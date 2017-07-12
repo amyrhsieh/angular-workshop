@@ -23,10 +23,23 @@ export class ConceptsComponent {
     'carrot',
     'broccoli',
     'cabbage'
-  ]
+  ];
 
   //Event binding
   handleClick(): void {
     this.showConditional = !this.showConditional;
   }
+
+  //Conditional class
+  fruits = [
+    'orange',
+    'kiwi',
+    'pear'
+  ];
+  selectedFruit: number;
+
+  selectFruit(i: number): void {
+    this.selectedFruit = i;
+  }
+
 }
