@@ -1,0 +1,26 @@
+@import './_colors.global';
+
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 1em;
+  background-color: inherit;
+}
+
+.blue-button {
+  @extend .button;
+  color: $blue;
+  border: 1px solid $blue;
+}
+.blue-button:hover {
+  background-color: $blue;
+  color: $black;
+  opacity: 0.6;
+}
+.blue-button:active {
+  background-color: $blue;
+  color: $black;
+  opacity: 0.8;
+}

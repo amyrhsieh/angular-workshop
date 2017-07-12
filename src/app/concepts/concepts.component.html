@@ -1,1 +1,21 @@
-<h1>Concepts</h1>
+<h2>Data binding</h2>
+<p>My name is {{simpleName}}!</p>
+
+<h2>Two-way input binding</h2>
+<input [(ngModel)]="inputName" placeholder="type a name">
+<p>Hello, {{inputName}}!<p>
+
+<p>from template to component</p>
+
+<h2>ngIf</h2>
+<div *ngIf="showConditional" class="conditional">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<h2>ngFor</h2>
+<ul>
+  <li *ngFor="let veg of veggies">{{veg}}</li>
+</ul>
+
+<h2>Event binding</h2>
+<button (click)="handleClick()" class="blue-button">Click me!</button>
