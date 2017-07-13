@@ -5,7 +5,7 @@ import { ConceptsComponent }    from './concepts/concepts.component';
 import { RobotsComponent }      from './robots/robots.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: 'concepts', pathMatch: 'full' },
   { path: 'concepts',  component: ConceptsComponent },
   { path: 'robots',    component: RobotsComponent }
 ];
