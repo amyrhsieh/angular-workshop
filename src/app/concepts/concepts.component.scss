@@ -19,6 +19,13 @@ input {
   width: 50%;
 }
 
+.conditional-false {
+  border-radius: 5px;
+  border: 1px solid $magenta;
+  padding: 10px;
+  width: 50%;
+}
+
 .selected {
   color: $magenta;
 }

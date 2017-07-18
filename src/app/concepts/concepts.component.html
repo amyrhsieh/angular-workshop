@@ -6,9 +6,14 @@
 <p>Hello, {{inputName}}!<p>
 
 <h2>ngIf</h2>
-<div *ngIf="showConditional" class="conditional">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div *ngIf="showConditional; else showConditionalFalse" class="conditional">
+  showConditional is true!
 </div>
+<ng-template #showConditionalFalse>
+  <div class="conditional-false">
+    showConditional is false!
+  </div>
+</ng-template>
 
 <h2>ngFor</h2>
 <ul>
