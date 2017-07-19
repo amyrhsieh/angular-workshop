@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ConceptsComponent }    from './concepts/concepts.component';
 import { RobotsComponent }      from './robots/robots.component';
+import { PokemonComponent }     from './pokemon/pokemon.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'concepts', pathMatch: 'full' },
   { path: 'concepts',  component: ConceptsComponent },
-  { path: 'robots',    component: RobotsComponent }
+  { path: 'robots',    component: RobotsComponent },
+  { path: 'pokemon',   component: PokemonComponent }
 ];
 
 @NgModule({
