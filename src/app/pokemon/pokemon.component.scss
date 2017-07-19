@@ -3,3 +3,12 @@
 h2 {
   color: $violet;
 }
+
+.pokemon-name {
+  text-transform: capitalize;
+  color: $blue;
+}
+
+.pokemon-sprite {
+  border: 1px solid $green;
+}

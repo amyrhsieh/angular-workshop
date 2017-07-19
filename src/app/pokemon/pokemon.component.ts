@@ -12,10 +12,11 @@ import { PokemonService } from './pokemon.service';
 })
 export class PokemonComponent implements OnInit {
   pokemon: any;
+
   constructor(private pokemonService: PokemonService) {}
 
   ngOnInit() {
-    this.pokemonService.getPokemon('pikachu')
+    this.pokemonService.getPokemon('bulbasaur')
       .subscribe(
         pokemon => this.pokemon = pokemon,
         error => {}
