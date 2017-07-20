@@ -1,5 +1,10 @@
 <h2>Pokemon!</h2>
 
+<label for="searchTerm">Search:</label>
+<input [(ngModel)]="searchTerm" class="search-field" (keyup)="clearErrors($event)"> <button type="button" (click)="search()" class="blue-button">Go!</button>
+
+<p *ngIf="searching" class="searching">searching...</p>
+
 <div *ngIf="pokemon">
   <h3 class="pokemon-name">{{pokemon.name}}</h3>
   <img [src]="pokemon.sprites.front_default" class="pokemon-sprite">
@@ -7,3 +12,7 @@
   <p>Height: {{pokemon.height / 10}} m</p>
   <p>Weight: {{pokemon.weight / 10}} kg</p>
 </div>
+
+<p *ngIf="notFound" class="not-found">
+  Pokemon {{notFound}} not found!
+</p>

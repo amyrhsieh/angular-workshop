@@ -1,4 +1,4 @@
-import { Component, OnInit }      from '@angular/core';
+import { Component }      from '@angular/core';
 
 import { PokemonService } from './pokemon.service';
 
@@ -10,16 +10,33 @@ import { PokemonService } from './pokemon.service';
     './pokemon.component.scss'
   ]
 })
-export class PokemonComponent implements OnInit {
+export class PokemonComponent {
   pokemon: any;
+  searchTerm: string;
+  searching: boolean = false;
+  notFound: string;
 
   constructor(private pokemonService: PokemonService) {}
 
-  ngOnInit() {
-    this.pokemonService.getPokemon('bulbasaur')
+  search() {
+    this.searching = true;
+    this.pokemon = null;
+    this.pokemonService.getPokemon(this.searchTerm)
       .subscribe(
-        pokemon => this.pokemon = pokemon,
-        error => {}
+        pokemon => {
+          this.searching = false;
+          this.pokemon = pokemon;
+        },
+        error => {
+          this.searching = false;
+          this.notFound = this.searchTerm;
+        }
       )
+  }
+
+  clearErrors(event: any): void {
+    if(event.key != "Enter") {
+      this.notFound = null;
+    }
   }
 }
