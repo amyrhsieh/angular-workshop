@@ -7,6 +7,7 @@ import { HttpModule }         from '@angular/http';
 import { AppRoutingModule }   from './app-routing.module';
 import { AppComponent }       from './app.component';
 import { ConceptsComponent }  from './concepts/concepts.component';
+import { RosterComponent }    from './roster/roster.component';
 import { PokemonComponent }   from './pokemon/pokemon.component';
 import { PokemonService }     from './pokemon/pokemon.service';
 
@@ -21,6 +22,7 @@ import { PokemonService }     from './pokemon/pokemon.service';
   declarations: [
     AppComponent,
     ConceptsComponent,
+    RosterComponent,
     PokemonComponent
   ],
   providers: [

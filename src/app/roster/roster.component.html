@@ -1,0 +1,22 @@
+<h1>Roster</h1>
+
+<p>My name is {{coachName}}, team coach!</p>
+
+<input [(ngModel)]="coachName" placeholder="type a name">
+
+<h2>Team Roster</h2>
+<ol>
+  <li *ngFor="let player of players" [class.selected]="player.ability=='technology'">{{player.name}}</li>
+</ol>
+
+<h2>Today's game</h2>
+<div *ngIf="gameOn; else gameOff" class="conditional-true">
+  Today's game is on!
+</div>
+<ng-template #gameOff>
+  <div class="conditional-false">
+    Today's game is off!
+  </div>
+</ng-template>
+
+<button (click)="handleClick()" class="blue-button">toggle game</button>
