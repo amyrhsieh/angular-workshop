@@ -5,10 +5,9 @@ This app was created for the Beyond AngularJS: Angular 2+ workshop at Developer 
 ## Set up
 1. Download the [demo app]( https://github.com/amyrhsieh/angular-devday-demo)
 2. Install [Node.js](https://nodejs.org/en/download/)
-3. Install [yarn](https://yarnpkg.com/lang/en/docs/install/)
-4. From your local demo app folder, run: `yarn install`
-5. Run the app: `yarn start`
-6. Go to the app in your browser: [http://localhost:8080/](http://localhost:8080/)
+3. From your local demo app folder, run: `npm install`
+4. Run the app: `npm start`
+5. Go to the app in your browser: [http://localhost:8080/](http://localhost:8080/)
 
 ## Suggested Tools/Packages
 
