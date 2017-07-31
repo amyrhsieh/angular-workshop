@@ -29,11 +29,16 @@ export class RosterComponent {
   gameOn: boolean = true;
 
   handlePlayerClick(player: Player): void {
-      this.selectedPlayer = player;
+    this.selectedPlayer = player;
   }
 
   handleToggleGameClick(): void {
     this.gameOn = !this.gameOn;
   }
 
+  addPlayer(form: any): void {
+    // console.dir(form.value);
+    this.players.push(form.value);
+    form.reset();
+  }
 }

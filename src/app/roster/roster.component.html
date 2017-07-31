@@ -11,6 +11,13 @@
 
 <p *ngIf="selectedPlayer" class="selected">{{selectedPlayer.name}}'s ability is {{selectedPlayer.ability}}.</p>
 
+<h3>Add a player</h3>
+<form #addPlayerForm="ngForm" (ngSubmit)="addPlayer(addPlayerForm)">
+  <input name="name" placeholder="New player name" ngModel>
+  <input name="ability" placeholder="New player's ability" ngModel>
+  <button type="submit" class="blue-button">Add new player</button>
+</form>
+
 <h2>Today's game</h2>
 <div *ngIf="gameOn; else gameOff" class="conditional-true">
   Today's game is on!
