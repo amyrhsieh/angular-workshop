@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   ]
 })
 export class ConceptsComponent {
-  //Data binding
+  //Template interpolation
   simpleName: string = 'Amy';
 
   //Two-way input binding
