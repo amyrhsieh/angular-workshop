@@ -17,16 +17,22 @@ export class RosterComponent {
   coachName: string = 'Amy';
 
   players: Player[] = [
-    { name: 'Iron Man', ability: 'technology' },
-    { name: 'Gamora', ability: 'human weapon' },
-    { name: 'Wolverine', ability: 'indestructible' },
+    { name: 'Iron Man', ability: 'technological genius' },
+    { name: 'Gamora', ability: 'being a human weapon' },
+    { name: 'Wolverine', ability: 'indestructibility' },
     { name: 'Deadpool', ability: 'snark' },
-    { name: 'The Hulk', ability: 'hulking out, blends in with trees' }
+    { name: 'The Hulk', ability: 'hulking out' }
   ];
+
+  selectedPlayer: Player;
 
   gameOn: boolean = true;
 
-  handleClick(): void {
+  handlePlayerClick(player: Player): void {
+      this.selectedPlayer = player;
+  }
+
+  handleToggleGameClick(): void {
     this.gameOn = !this.gameOn;
   }
 

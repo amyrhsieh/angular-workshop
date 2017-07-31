@@ -6,8 +6,10 @@
 
 <h2>Team Roster</h2>
 <ol>
-  <li *ngFor="let player of players" [class.selected]="player.ability=='technology'">{{player.name}}</li>
+  <li *ngFor="let player of players" [class.selected]="player==selectedPlayer" (click)="handlePlayerClick(player)" class="clickable">{{player.name}}</li>
 </ol>
+
+<p *ngIf="selectedPlayer" class="selected">{{selectedPlayer.name}}'s ability is {{selectedPlayer.ability}}.</p>
 
 <h2>Today's game</h2>
 <div *ngIf="gameOn; else gameOff" class="conditional-true">
@@ -19,4 +21,4 @@
   </div>
 </ng-template>
 
-<button (click)="handleClick()" class="blue-button">toggle game</button>
+<button (click)="handleToggleGameClick()" class="blue-button">toggle game</button>
