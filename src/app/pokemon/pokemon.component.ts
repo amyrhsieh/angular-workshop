@@ -12,16 +12,15 @@ import { PokemonService } from './pokemon.service';
 })
 export class PokemonComponent {
   pokemon: any;
-  searchTerm: string;
   searching: boolean = false;
   notFound: string;
 
   constructor(private pokemonService: PokemonService) {}
 
-  search() {
+  search(searchTerm: string) {
     this.searching = true;
     this.pokemon = null;
-    this.pokemonService.getPokemon(this.searchTerm)
+    this.pokemonService.getPokemon(searchTerm)
       .subscribe(
         pokemon => {
           this.searching = false;
@@ -29,7 +28,7 @@ export class PokemonComponent {
         },
         error => {
           this.searching = false;
-          this.notFound = this.searchTerm;
+          this.notFound = searchTerm;
         }
       )
   }
