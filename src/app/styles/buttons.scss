@@ -17,11 +17,23 @@
 }
 .blue-button:hover {
   background-color: $blue;
-  color: $black;
-  opacity: 0.6;
+  color: $white;
 }
 .blue-button:active {
-  background-color: $blue;
+  background-color: $blue2;
+  color: $white;
+}
+
+.green-button {
+  @extend .button;
+  color: $green;
+  border: 1px solid $green;
+}
+.green-button:hover {
+  background-color: $green2;
   color: $black;
-  opacity: 0.8;
+}
+.green-button:active {
+  background-color: $green3;
+  color: $black;
 }

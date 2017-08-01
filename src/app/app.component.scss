@@ -24,23 +24,10 @@ div.navbar {
   }
   .navitem {
     display: inline-block;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 5px;
-    color: $green;
-    border: 1px solid $green;
   }
   .navitem.active {
     background-color: $green;
     color: $black;
-  }
-  .navitem:hover {
-    @extend .navitem.active;
-    opacity: 0.6;
-  }
-  .navitem:active {
-    @extend .navitem.active;
-    opacity: 0.8;
   }
 }
 

@@ -15,10 +15,10 @@ export class ConceptsComponent {
   //Two-way input binding
   inputName: string = 'Your name here';
 
-  //ngIf
+  //Conditionals
   showConditional: boolean = true;
 
-  //ngFor
+  //Iteration
   veggies = [
     'carrot',
     'broccoli',
