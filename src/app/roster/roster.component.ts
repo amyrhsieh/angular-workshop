@@ -38,7 +38,11 @@ export class RosterComponent {
 
   addPlayer(form: any): void {
     // console.dir(form.value);
-    this.players.push(form.value);
-    form.reset();
+    const data = form.value;
+    if(data.name && (data.name != '') && data.ability && (data.ability != '')) {
+      this.players.push(form.value);
+      form.reset();
+    }
+
   }
 }
