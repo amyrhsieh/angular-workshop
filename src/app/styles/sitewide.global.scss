@@ -7,3 +7,35 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/*** Styles for content on each page ***/
+@import '../styles/_colors.global';
+
+input {
+  border-radius: 5px;
+  color: $black;
+  box-shadow: none;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.conditional {
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.conditional-true {
+  @extend .conditional;
+  border: 1px solid $blue;
+}
+
+.conditional-false {
+  @extend .conditional;
+  border: 1px solid $magenta;
+}
+
+.clickable {
+  cursor: pointer;
+}
