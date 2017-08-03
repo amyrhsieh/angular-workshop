@@ -13,3 +13,6 @@ This app was created for the Beyond AngularJS: Angular 2+ workshop at Developer 
 
 ### [atom-typescript](https://atom.io/packages/atom-typescript)
 This Atom package has syntax highlighting, auto-complete, and many other features for coding in TypeScript. Highly recommended if you are working on this project in Atom.
+
+## PokeAPI
+This project makes use of the [Pokemon API](https://pokeapi.co/), a great resource for learning to use RESTful APIs. Please don't abuse this resource; hit the API only as needed.
