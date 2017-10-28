@@ -2,7 +2,8 @@
 
 <form #pokemonSearchForm="ngForm" (ngSubmit)="search(pokemonSearchForm.value.searchTerm)">
   <label for="searchTerm">Search:</label>
-  <input name="searchTerm" ngModel class="search-field" (keyup)="clearErrors($event)"> <button type="submit" class="blue-button">Go!</button>
+  <input name="searchTerm" ngModel class="search-field" (keyup)="clearErrors($event)">
+  <button type="submit" class="blue-button">Go!</button>
 </form>
 
 <p *ngIf="searching" class="searching">searching...</p>

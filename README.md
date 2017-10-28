@@ -1,6 +1,6 @@
-# Angular Demo for Developer Day 2017
+# Angular Workshop Demo App
 
-This app was created for the Beyond AngularJS: Angular 2+ workshop at Developer Day 2017. [Slides from workshop]( https://docs.google.com/presentation/d/1t8omq2U09pUpCN9-PCH_51qsXWq30-XXAVXF7UgPe4k/edit?usp=sharing)
+This app was created for the Beyond AngularJS: Angular 2+ workshop. [Slides from workshop]( https://docs.google.com/presentation/d/1M4BdtZl5fRZQ7AAXcOiKNKrJHIrYPRhReF_odlKgpwQ/edit?usp=sharing)
 
 ## Set up
 1. Download the [demo app]( https://github.com/amyrhsieh/angular-devday-demo)
